@@ -7,24 +7,17 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  display: flex;
- 
-  justify-content: flex-end;
-  align-items: flex-end;
-  min-height: 100vh;
-}
-
 .footer {
   position: relative;
+  margin-top: 150px;
   width: 100%;
-  background: #3586ff;
+  background: rgb(0,210,143); /* Темно-зеленый цвет */
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 150px;
+  z-index: 0; /* Устанавливаем z-index в 0, чтобы не перекрывать модальные окна */
 }
 
 .social-icon,
@@ -51,6 +44,7 @@ body {
 }
 
 .social-icon__link:hover {
+  color: #00ff00; /* Ярко-зеленый цвет */
   transform: translateY(-10px);
 }
 
@@ -66,6 +60,7 @@ body {
 }
 
 .menu__link:hover {
+  color: #00ff00; /* Ярко-зеленый цвет */
   opacity: 1;
 }
 
@@ -87,31 +82,35 @@ body {
 }
 
 .wave#wave1 {
-  z-index: 1000;
+  z-index: 0;
   opacity: 1;
   bottom: 0;
   animation: animateWaves 4s linear infinite;
+  filter: invert(70%) sepia(100%) saturate(1000%) hue-rotate(120deg); 
 }
 
 .wave#wave2 {
-  z-index: 999;
+  z-index: 0;
   opacity: 0.5;
   bottom: 10px;
   animation: animate 4s linear infinite !important;
+  filter: invert(70%) sepia(100%) saturate(1000%) hue-rotate(120deg); 
 }
 
 .wave#wave3 {
-  z-index: 1000;
+  z-index: 0;
   opacity: 0.2;
   bottom: 15px;
   animation: animateWaves 3s linear infinite;
+  filter: invert(70%) sepia(100%) saturate(1000%) hue-rotate(120deg);
 }
 
 .wave#wave4 {
-  z-index: 999;
+  z-index: 0;
   opacity: 0.7;
   bottom: 20px;
   animation: animate 3s linear infinite;
+  filter: invert(70%) sepia(100%) saturate(1000%) hue-rotate(120deg); 
 }
 
 @keyframes animateWaves {

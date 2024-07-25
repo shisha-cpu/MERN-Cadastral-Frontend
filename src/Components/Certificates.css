@@ -1,74 +1,103 @@
+/* Certificates.css */
 .container {
     text-align: center;
-}
+    padding: 20px;
 
-.section-title {
+  }
+
+  .section-title {
     margin-bottom: 20px;
-}
-
-.certificates {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.certificates img {
-    width: 18svw;
-    height: 22svw;
-    margin: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
- 
-}
-
-.certificates img:hover {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .slider {
+    position: relative;
+  }
+  
+  .slick-slide img {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  
+  .slick-slide img:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 60px; 
+  }
+  
+  .slick-prev, .slick-next {
+    font-size: 40px;
+    color: #004d00; /* Темно-зеленый цвет */
+    z-index: 1;
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.9); 
-}
-
-.modal-content {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-.modal-content { 
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
-}
-
-.close {
+    max-width: 90%;
+    max-height: 90%;
+    animation: zoom 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .close {
     position: absolute;
     top: 15px;
     right: 35px;
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
     color: #bbb;
     text-decoration: none;
-
-}
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .slick-slide img {
+      width: 80vw;
+      height: auto;
+    }
+  
+    .section-title {
+      font-size: 1.5rem;
+    }
+  }
+  

@@ -24,7 +24,7 @@
   
   .accordion-header {
     padding: 15px;
-    background: #5151E5;
+    background: #46a16c;
     color: #fff;
     cursor: pointer;
     display: flex;
@@ -34,7 +34,7 @@
   }
   
   .accordion-header:hover {
-    background: #4040b2;
+    background: rgb(17, 221, 34);
   }
   
   .arrow {

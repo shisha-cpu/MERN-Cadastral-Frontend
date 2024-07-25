@@ -1,5 +1,21 @@
 import React, { useState } from 'react';
+import Slider from 'react-slick';
 import './Certificates.css';
+
+import img0 from './сертификаты/0.jpg';
+import img1 from './сертификаты/1.jpg';
+import img2 from './сертификаты/2.jpg';
+import img3 from './сертификаты/3.jpg';
+import img4 from './сертификаты/4.jpg';
+import img5 from './сертификаты/5.jpg';
+import img6 from './сертификаты/6.jpg';
+import img7 from './сертификаты/7.jpg';
+import img8 from './сертификаты/8.jpg';
+import img9 from './сертификаты/9.jpg';
+
+// Добавьте больше изображений при необходимости
+
+const images = [img0, img1, img2, img3 ,  img5 , img6 , img7 , img8 , img9]  ;
 
 const Certificates = () => {
   const [modalSrc, setModalSrc] = useState('');
@@ -14,31 +30,38 @@ const Certificates = () => {
     setIsOpen(false);
   };
 
+  // Настройки слайдера
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true, // Включаем стрелки навигации
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div className="container">
-      <h2 className="section-title" id='cert' >Дипломы и сертификаты</h2>
-      <div className="certificates">
-        <img 
-          src="https://avatars.mds.yandex.net/get-ydo/9712213/2a00000190bfd819c8977ab199c0be1dff6c/diploma" 
-          alt="" 
-          onClick={() => openModal("https://avatars.mds.yandex.net/get-ydo/9712213/2a00000190bfd819c8977ab199c0be1dff6c/diploma")}
-        />
-        <img 
-          src="https://avatars.mds.yandex.net/get-ydo/11397567/2a00000190bfd87aa8f0e4890d579aff2b7e/diploma" 
-          alt="" 
-          onClick={() => openModal("https://avatars.mds.yandex.net/get-ydo/11397567/2a00000190bfd87aa8f0e4890d579aff2b7e/diploma")}
-        />
-        <img 
-          src="https://avatars.mds.yandex.net/get-ydo/4421910/2a00000190bfd8c10c0f4a9f389f1f5a1862/diploma" 
-          alt="" 
-          onClick={() => openModal("https://avatars.mds.yandex.net/get-ydo/4421910/2a00000190bfd8c10c0f4a9f389f1f5a1862/diploma")}
-        />
-        <img 
-          src="https://avatars.mds.yandex.net/get-ydo/12406519/2a00000190bfd8c0141fd0654c9bbc910d98/diploma" 
-          alt="" 
-          onClick={() => openModal("https://avatars.mds.yandex.net/get-ydo/12406519/2a00000190bfd8c0141fd0654c9bbc910d98/diploma")}
-        />
-      </div>
+      <h2 className="section-title" id='cert'>Дипломы и сертификаты</h2>
+      <Slider {...settings} className="slider">
+        {images.map((src, index) => (
+          <div key={index}>
+            <img 
+              src={src} 
+              alt={`Certificate ${index + 1}`} 
+              onClick={() => openModal(src)}
+            />
+          </div>
+        ))}
+      </Slider>
 
       {isOpen && (
         <div className="modal" onClick={closeModal}>
