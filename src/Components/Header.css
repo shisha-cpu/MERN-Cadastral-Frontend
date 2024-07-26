@@ -50,6 +50,9 @@
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.2);
   transition: background 0.3s, transform 0.3s;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav-link:hover {

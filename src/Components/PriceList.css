@@ -74,4 +74,9 @@
   .accordion-body td {
     text-align: left;
   }
-  
+  @media (max-width : 470px) {
+    .accordion-body.open {
+      max-height: 1000px;
+
+    }
+  }
