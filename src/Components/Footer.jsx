@@ -3,7 +3,7 @@ import './Footer.css'; // Убедитесь, что CSS файл находит
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id='consultation'>
       <div className="waves">
         <div className="wave" id="wave1"></div>
         <div className="wave" id="wave2"></div>
@@ -45,7 +45,7 @@ const Footer = () => {
       <div className="contact-info">
         <h3>Контактная информация</h3>
         <p><strong>Телефон:</strong> +7-908-787-76-79, +7-920-557-66-77</p>
-        <p><strong>Telegram:</strong> <a color='#fff' href="https://web.telegram.org/k/#@okp_info31">@okp_info31</a></p>
+        <p><strong>Telegram:</strong> <a href="https://telegram.me/okp_info31">@okp_info31</a> </p>
         <p><strong>Email:</strong> okp-info@mail.ru</p>
         <p><strong>График работы:</strong> 9:00-20:00, Ежедневно (воскресенье выходной)</p>
         <p><strong>Адреса:</strong></p>
