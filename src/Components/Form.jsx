@@ -52,7 +52,7 @@ const Form = () => {
 
   return (
     
-    <div className=" form-container" id='consultation' >
+    <div className=" form-container">
    
       <h2>Контактная форма</h2>
       <form onSubmit={handleSubmit}>
