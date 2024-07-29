@@ -101,3 +101,15 @@
     }
   }
   
+  .slick-list {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}

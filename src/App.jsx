@@ -20,7 +20,7 @@ function App() {
       <Certificates />
       <PriceList />
       <Partners />
-      <h2 className="section-title" id='cert'  >Обратная связь</h2>
+      <h2 className="section-title" id='cert' style={{marginTop : '50px'}} >Обратная связь</h2>
 
       <Form />
       <Footer />
