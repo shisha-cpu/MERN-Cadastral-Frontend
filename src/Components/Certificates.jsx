@@ -16,10 +16,10 @@ import img11 from './сертификаты/11.jpg';
 import img12 from './сертификаты/12.jpg';
 import img13 from './сертификаты/13.jpg';
 import img14 from './сертификаты/14.jpg';
-
+import img15 from './сертификаты/15.jpg';
 // Добавьте больше изображений при необходимости
 
-const images = [img0, img1, img2, img3 ,  img5 , img6 , img7 , img8 , img9  , img12  , img13  ,img14]  ;
+const images = [img0, img1, img2, img3 ,  img5 , img6 , img7 , img8 , img9  , img12  , img13  ,img14 , img15]  ;
 
 const Certificates = () => {
   const [modalSrc, setModalSrc] = useState('');
@@ -55,7 +55,7 @@ const Certificates = () => {
   return (
     <div className="">
       <h2 className="section-title" id='cert'>Дипломы и сертификаты</h2>
-      <Slider {...settings} className="slider">
+      <Slider {...settings} className="">
         {images.map((src, index) => (
           <div key={index}>
             <img 

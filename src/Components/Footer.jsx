@@ -31,17 +31,22 @@ const Footer = () => {
             <ion-icon name="logo-instagram"></ion-icon>
           </a>
         </li>
+        <li className="social-icon__item">
+          <a className="social-icon__link" href="tg://resolve?domain=9087877679">
+            <ion-icon name="paper-plane"></ion-icon> {/* Иконка Telegram */}
+          </a>
+        </li>
+        <li className="social-icon__item">
+          <a className="social-icon__link" href="mailto:rostilksalam@yandex.ru">
+            <ion-icon name="mail"></ion-icon> {/* Иконка почты */}
+          </a>
+        </li>
       </ul>
-      {/* <ul className="menu">
-        <li className="menu__item"><a className="menu__link" href="#">Home</a></li>
-        <li className="menu__item"><a className="menu__link" href="#">About</a></li>
-        <li className="menu__item"><a className="menu__link" href="#">Services</a></li>
-        <li className="menu__item"><a className="menu__link" href="#">Team</a></li>
-        <li className="menu__item"><a className="menu__link" href="#">Contact</a></li>
-      </ul> */}
       <div className="contact-info">
         <h3>Контактная информация</h3>
         <p><strong>Телефон:</strong> +7-908-787-76-79, +7-920-557-66-77</p>
+        <p><strong>Telegram:</strong> <a color='#fff' href="https://web.telegram.org/k/#@okp_info31">@okp_info31</a></p>
+        <p><strong>Email:</strong> okp-info@mail.ru</p>
         <p><strong>График работы:</strong> 9:00-20:00, Ежедневно (воскресенье выходной)</p>
         <p><strong>Адреса:</strong></p>
         <ul>

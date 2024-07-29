@@ -6,9 +6,9 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-content">
-       <a href="#"> <img src={logo} alt="Логотип" className="header-logo" /></a> {/* Логотип слева */}
+        <a href="#"><img src={logo} alt="Логотип" className="header-logo" /></a> {/* Логотип слева */}
         <nav className="header-nav"> {/* Навигация по центру */}
-          <a href="#about" className="nav-link"> О компании</a>
+          <a href="#about" className="nav-link">О компании</a>
           <a href="#price-list" className="nav-link">Прайс-лист</a>
           <a href="#consultation" className="nav-link">Контакты</a>
         </nav>

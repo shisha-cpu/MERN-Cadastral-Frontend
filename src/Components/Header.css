@@ -3,8 +3,12 @@
   padding: 20px;
   display: flex;
   justify-content: center;
-  position: relative;
+  position: fixed; /* Фиксированное положение */
+  top: 0; /* Прикрепить к верхней части страницы */
+  width: 100%; /* Ширина 100% */
+  z-index: 1000; /* Убедиться, что шапка выше другого контента */
   overflow: hidden;
+  max-height: 130px;
 }
 
 .header::before {
@@ -13,7 +17,7 @@
   top: -100%;
   left: -100%;
   width: 300%;
-  height: 300%;
+  height: 200%;
   background: radial-gradient(circle at center, transparent, rgba(0, 0, 0, 0.2));
   animation: rotate 10s linear infinite;
   z-index: 0; /* Поставить псевдоэлемент под содержимым */
@@ -30,7 +34,7 @@
 }
 
 .header-logo {
-  max-width: 150px;
+  max-width: 120px;
   height: auto;
 }
 
@@ -106,7 +110,10 @@
     flex-direction: column;
     align-items: center;
   }
-
+  .header{
+    position: relative; /* Фиксированное положение */
+    max-height: 500px;
+  }
   .header-nav {
     order: 3;
     margin: 10px 0;
