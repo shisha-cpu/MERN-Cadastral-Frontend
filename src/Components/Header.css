@@ -9,7 +9,7 @@
   z-index: 100; /* Убедитесь, что значение достаточно велико */
   overflow: hidden;
   max-height: 130px;
-  margin-bottom: 100px;
+
 }
 
 .header::before {
