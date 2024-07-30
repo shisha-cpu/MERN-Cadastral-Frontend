@@ -2,6 +2,16 @@ import React from 'react';
 import './Partners.css'; // Импортируем стили
 
 const Partners = () => {
+  const handleScrollTo = (event, targetId) => {
+    event.preventDefault(); // Отменяем стандартное поведение ссылки
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 150,
+        behavior: 'smooth' // Добавляем плавную прокрутку
+      });
+    }}
   return (
     <section className="partners ">
         <h2 className="section-title" id='part'>Партнерам</h2>
@@ -35,7 +45,8 @@ const Partners = () => {
         <li>Выполнение независимой оценки опытными компетентными специалистами.</li>
       </ul>
       <p>Будем рады видеть Вас в числе своих Партнеров!</p>
-      <a href="#consultation" className="consultation-button">КОНСУЛЬТАЦИЯ</a>
+      <a href="#consultation" className="consultation-button" onClick={(e) => handleScrollTo(e, 'consultation')}>КОНСУЛЬТАЦИЯ</a>
+    
     </section>
   );
 };

@@ -23,7 +23,7 @@ const Header = () => {
           <a href="#about" className="nav-link" onClick={(e) => handleScrollTo(e, 'about')}>О компании</a>
           <a href="#price-list" className="nav-link" onClick={(e) => handleScrollTo(e, 'price-list')}>Прайс-лист</a>
           <a href="#part" className="nav-link" onClick={(e) => handleScrollTo(e, 'part')}>Партнерам</a>
-          <a href="#footer" className="nav-link" onClick={(e) => handleScrollTo(e, 'consultation')}>Контакты</a>
+          <a href="#footer" className="nav-link" onClick={(e) => handleScrollTo(e, 'footer')}>Контакты</a>
         </nav>
         <div className="header-right"> {/* Контакты и кнопка справа */}
           <div className="contact-info">
