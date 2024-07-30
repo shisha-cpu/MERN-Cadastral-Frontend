@@ -3,7 +3,7 @@ import './Footer.css'; // Убедитесь, что CSS файл находит
 
 const Footer = () => {
   return (
-    <footer className="footer" id='consultation'>
+    <footer className="footer" id='footer'>
       <div className="waves">
         <div className="wave" id="wave1"></div>
         <div className="wave" id="wave2"></div>
