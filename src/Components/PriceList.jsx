@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './PriceList.css';
 
 const priceListData = {
-'Оценка недвижимости': [
+'Оценка ': [
   { name: 'Жилые дома (доля)', price: 'от 5 500 руб.' },
   { name: 'Квартира до 100 м²', price: 'от 3 500 руб.' },
   { name: 'Квартира до 100 м² (высокая цена)', price: 'от 4 500 руб.' },
